@@ -1,4 +1,4 @@
-import strutils, sequtils, sets
+import strutils, sequtils
 
 proc partOne: int =
   let input = readFile("input.txt").splitLines.filter(proc(x: string): bool = x != "")
