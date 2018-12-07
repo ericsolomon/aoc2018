@@ -74,7 +74,7 @@ proc partOne(): int =
 proc partTwo(): int =
   for i in 0..<MAX_X:
     for j in 0..<MAX_Y:
-      if coords.map(func(coord: GridCoord): int = abs(coord.x - j) + abs(coord.y - i)).foldl(a + b) < 10000:
+      if coords.map(func(coord: GridCoord): int = abs(coord.x - j) + abs(coord.y - i)).foldl(a + b) < 10_000:
         inc result
 
 echo "Area of largest non-infinite region: ", partOne()
